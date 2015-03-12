@@ -1,0 +1,14 @@
+logs/*
+!.gitkeep
+node_modules/
+bower_components/
+*.log
+tmp
+!.gitkeep
+logs/*
+*.sublime-*
+credentials.*
+models/
+tmp
+.DS_Store
+.idea
