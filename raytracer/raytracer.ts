@@ -265,6 +265,8 @@ function defaultScene(): Scene {
 }
 
 function exec() {
+    console.log('Bootstrapping TS');
+
     var canv = document.createElement("canvas");
     canv.width = 256;
     canv.height = 256;

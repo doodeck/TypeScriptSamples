@@ -1,3 +1,5 @@
+/* tsc --sourcemap raytracer.ts  */
+
 var Vector = (function () {
     function Vector(x, y, z) {
         this.x = x;
@@ -244,13 +246,14 @@ function defaultScene() {
     };
 }
 function exec() {
-    var width = 256, height = 256;
+    console.log('Bootstrapping TS');
     var canv = document.createElement("canvas");
-    canv.width = width;
-    canv.height = height;
+    canv.width = 256;
+    canv.height = 256;
     document.body.appendChild(canv);
     var ctx = canv.getContext("2d");
     var rayTracer = new RayTracer();
-    return rayTracer.render(defaultScene(), ctx, width, height);
+    return rayTracer.render(defaultScene(), ctx, 256, 256);
 }
 exec();
+//# sourceMappingURL=raytracer.js.map
