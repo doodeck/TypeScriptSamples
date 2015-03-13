@@ -1,5 +1,4 @@
-/* tsc --sourcemap raytracer.ts  */
-
+/* Translated automatically using http://www.typescriptlang.org/Playground */
 var Vector = (function () {
     function Vector(x, y, z) {
         this.x = x;
@@ -246,14 +245,16 @@ function defaultScene() {
     };
 }
 function exec() {
+    // this is crashing the Intl display driver, strange var width = 1024, height = 1024;
+    var width = 512, height = 512;
     console.log('Bootstrapping TS');
     var canv = document.createElement("canvas");
-    canv.width = 256;
-    canv.height = 256;
+    canv.width = width;
+    canv.height = height;
     document.body.appendChild(canv);
     var ctx = canv.getContext("2d");
     var rayTracer = new RayTracer();
-    return rayTracer.render(defaultScene(), ctx, 256, 256);
+    return rayTracer.render(defaultScene(), ctx, width, height);
 }
 exec();
 //# sourceMappingURL=raytracer.js.map
