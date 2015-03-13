@@ -1,4 +1,4 @@
-
+/* Translated automatically using http://www.typescriptlang.org/Playground */
 class Vector {
     constructor(public x: number,
                 public y: number,
