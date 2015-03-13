@@ -12,3 +12,4 @@ models/
 tmp
 .DS_Store
 .idea
+*.map
